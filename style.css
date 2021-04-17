@@ -6,8 +6,8 @@
 
     body {
         font-family: 'Poppins', sans-serif;
-        min-height:100vh;
-        width:100%;
+        height:100vh;
+        width:100vw;
         position: relative;
         background-image: url(./pexels-ákos-szabó-440731.jpg);
         background-position: center;
@@ -17,6 +17,13 @@
     h4 {
         margin-left: 5vw;
         cursor: pointer;
+        background: -webkit-linear-gradient( rgb(231, 247, 8), rgb(250, 9, 198));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+        overflow:hidden;
     }
 
     h5 {
@@ -27,8 +34,43 @@
     p {
         margin-top: -15px;
         margin-left: 5vw;
+        margin-right: 5vw;
         font-size: 10px;
         font-weight: 1px;
+    }
+
+    ul {
+        background-color:rgba(79, 88, 212, 0.651);
+        position : relative;
+        display: flex;
+        width:35vw;
+        height: 90vh;
+        right:-35vw;
+        z-index: 1.6;
+        transition: all 0.3s ease-in-out;
+        display: none;
+    }
+
+
+    ul.open {
+        background-color:rgba(79, 88, 212, 0.651);
+        position : absolute;
+        display: flex;
+        justify-content:space-around;
+        align-items : center;
+        flex-direction: column;
+        color: aliceblue;
+        list-style: none;
+        width:35vw;
+        height: 90vh;
+        right: 0;
+        z-index: 1.1;
+        transition: all 0.3s ease-in;
+    }
+
+    ul li {
+        cursor: pointer;
+        
     }
 
     .nav {
@@ -53,6 +95,7 @@
         height: 4px;
         width: 100%;
         margin: 3px auto;
+        border-radius: 50px;
     }
     .div2 {
         position: relative;
@@ -60,6 +103,7 @@
         height: 4px;
         width: 100%;
         margin: 10px auto;
+        border-radius: 50px;
     }
     .div3 {
         position: relative;
@@ -67,4 +111,5 @@
         height: 4px;
         width: 100%;
         margin: 10px auto;
+        border-radius: 50px;
     }
